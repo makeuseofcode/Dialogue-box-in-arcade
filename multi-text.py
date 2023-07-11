@@ -43,9 +43,9 @@ class Game(arcade.Window):
         elif key == arcade.key.RIGHT:
             self.player_x += 25
         elif key == arcade.key.UP:
-            self.player_y -= 25
-        elif key == arcade.key.DOWN:
             self.player_y += 25
+        elif key == arcade.key.DOWN:
+            self.player_y -= 25
         elif key == arcade.key.SPACE:
             self.dialogue_index +=1
             if self.dialogue_index >= len(self.dialogue_messages):
