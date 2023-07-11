@@ -25,9 +25,9 @@ class Game(arcade.Window):
         elif key == arcade.key.RIGHT:
             self.player_x += 25
         elif key == arcade.key.UP:
-            self.player_y -= 25
-        elif key == arcade.key.DOWN:
             self.player_y += 25
+        elif key == arcade.key.DOWN:
+            self.player_y -= 25
 
     def on_key_release(self, key, modifiers):
         pass
